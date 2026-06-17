@@ -354,7 +354,6 @@ p {
 }
 
 .challenge-grid,
-.impact-grid,
 .product-grid,
 .price-grid,
 .ods-grid {
@@ -367,7 +366,6 @@ p {
 }
 
 .challenge-grid article,
-.impact-grid article,
 .canvas-grid article,
 .product-grid article,
 .price-grid article {
@@ -480,35 +478,6 @@ p {
 .item-b { top: 47%; right: 8%; transform: translateY(-50%); }
 .item-c { bottom: 52px; left: 50%; transform: translateX(-50%); }
 .item-d { top: 47%; left: 7%; transform: translateY(-50%); }
-
-.impact {
-  text-align: center;
-}
-
-.impact-grid {
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: 34px;
-}
-
-.impact-grid article {
-  min-height: 190px;
-  padding: 30px 22px;
-}
-
-.impact-grid strong {
-  display: block;
-  color: var(--teal-dark);
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
-  line-height: 1;
-}
-
-.impact-grid span {
-  display: block;
-  margin-top: 14px;
-  color: #213c49;
-  font-size: 1.15rem;
-  font-weight: 800;
-}
 
 .case-section {
   border-top: 1px solid var(--line);
@@ -1124,7 +1093,6 @@ p {
   }
 
   .metric-strip,
-  .impact-grid,
   .price-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1197,7 +1165,6 @@ p {
 
   .metric-strip,
   .challenge-grid,
-  .impact-grid,
   .canvas-grid,
   .product-grid,
   .ods-grid,
