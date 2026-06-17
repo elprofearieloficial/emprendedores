@@ -412,72 +412,21 @@ p {
   background: linear-gradient(100deg, #ffffff 0%, #eef8f6 100%);
 }
 
-.orbit {
-  position: relative;
-  min-height: 520px;
-}
-
-.orbit::before,
-.orbit::after {
-  position: absolute;
-  inset: 50% auto auto 50%;
-  width: min(84%, 430px);
-  aspect-ratio: 1;
-  content: "";
-  transform: translate(-50%, -50%);
-  border: 1px dashed rgba(0, 107, 104, 0.34);
-  border-radius: 50%;
-}
-
-.orbit::after {
-  width: min(58%, 292px);
-  border-style: solid;
-  opacity: 0.52;
-}
-
-.orbit-center {
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
+.answer-diagram {
   display: grid;
-  width: 210px;
-  height: 210px;
-  transform: translate(-50%, -50%);
+  min-height: 520px;
   place-items: center;
-  border-radius: 50%;
+}
+
+.answer-diagram img {
+  width: min(100%, 680px);
+  max-height: 610px;
+  object-fit: contain;
+  border: 1px solid var(--line);
+  border-radius: 8px;
   background: var(--white);
   box-shadow: var(--shadow);
 }
-
-.orbit-center img {
-  width: 82%;
-  height: 82%;
-  object-fit: contain;
-}
-
-.orbit-item {
-  position: absolute;
-  z-index: 3;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 220px;
-  min-height: 72px;
-  padding: 12px 16px;
-  text-align: center;
-  border: 1px solid rgba(0, 107, 104, 0.18);
-  border-radius: 8px;
-  background: var(--white);
-  box-shadow: 0 14px 30px rgba(0, 80, 78, 0.12);
-  font-size: 1.12rem;
-  font-weight: 900;
-}
-
-.item-a { top: 42px; left: 50%; transform: translateX(-50%); }
-.item-b { top: 47%; right: 8%; transform: translateY(-50%); }
-.item-c { bottom: 52px; left: 50%; transform: translateX(-50%); }
-.item-d { top: 47%; left: 7%; transform: translateY(-50%); }
 
 .case-section {
   border-top: 1px solid var(--line);
@@ -1172,21 +1121,6 @@ p {
   .dash-cards {
     grid-template-columns: 1fr;
   }
-
-  .orbit {
-    min-height: 620px;
-  }
-
-  .orbit-item {
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%);
-  }
-
-  .item-a { top: 28px; }
-  .item-b { top: 156px; }
-  .item-c { bottom: 156px; }
-  .item-d { top: auto; bottom: 28px; }
 
   .badge {
     right: 50%;
