@@ -879,6 +879,8 @@ p {
 
 .proof {
   border-top: 1px solid var(--line);
+  display: block;
+  max-width: 980px;
 }
 
 .photo-panel {
