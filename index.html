@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>UNPA Tech Factory | Educación sin límites</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+      .challenge-grid .challenge-highlight {
+        color: var(--white);
+        border-color: rgba(134, 255, 246, 0.72);
+        background: linear-gradient(135deg, var(--teal-dark), #073347);
+        box-shadow: 0 22px 46px rgba(0, 107, 104, 0.28);
+      }
+
+      .challenge-grid .challenge-highlight .icon {
+        color: var(--teal-dark);
+        background: var(--white);
+      }
+
+      .challenge-grid .challenge-highlight p {
+        color: #dff7f4;
+      }
+    </style>
   </head>
   <body>
     <header class="topbar" aria-label="Navegación principal">
@@ -71,7 +88,7 @@
         </div>
         <div class="challenge-grid">
           <article><span class="icon">▦</span><strong>Procesos duplicados</strong><p>Trámites manuales y registros dispersos.</p></article>
-          <article><span class="icon">$</span><strong>Costos altos</strong><p>Desarrollo externo difícil de mantener.</p></article>
+          <article class="challenge-highlight"><span class="icon">$</span><strong>Costos altos</strong><p>Desarrollo externo difícil de mantener.</p></article>
           <article><span class="icon">◷</span><strong>Información tardía</strong><p>Datos que no llegan en tiempo real.</p></article>
           <article><span class="icon">&lt;/&gt;</span><strong>Integración débil</strong><p>Tecnología obsoleta o aislada.</p></article>
         </div>
